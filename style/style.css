@@ -504,14 +504,12 @@ input[type=submit]:hover
 
 .container 
 {
-   	/* Ajouter box-sizing */
    	box-sizing : border-box;
    	border-radius:5px;
    	padding:20px;
   	width: 100%;
-  	/* redéfinition 400 + 2*20 */
- 	 max-width: 80%;
- 	 margin:0 auto;
+ 	max-width: 80%;
+ 	margin:0 auto;
 }
 
 .contact h1  
