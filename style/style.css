@@ -1,0 +1,526 @@
+*
+{
+	margin: 0;
+	outline: none;
+	font-family: Verdana, sans-serif;
+	box-sizing: border-box;
+}
+
+header
+{
+	max-height: 150px;
+	border-bottom: 3px black solid;
+	background-color: rgba(202, 202, 202, 0.35);
+	background-position: center center;
+	font-size: 15px;
+}
+
+
+nav
+{
+	margin-left: 5px;
+	margin-right: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 15px;
+	font-weight: bold;
+	
+}
+
+.navdroite
+{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+nav a
+{
+	font-size: 12px;
+	text-decoration: none;
+	font-weight: 1;
+}
+
+.logo
+{
+	height: 150px;
+}
+
+
+footer 
+{
+	margin: auto;
+	border-top: 3px black solid;
+	background-color: rgba(202, 202, 202, 0.35);
+	font-size: 12px;
+	width: 100%;
+	margin-top: 35px;
+}
+
+.footer
+{
+	text-align: center;
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;	
+}
+
+h1 
+{
+	text-align: center;
+	color: black;
+	font-weight: bold;
+	background-color: white;
+	margin-bottom: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border: 2px black solid;
+	border-radius: 10px;
+	margin-top: 30px;
+	width: 80%;
+	margin-left: auto;
+    margin-right: auto;
+    font-size: 28px;
+}
+
+h2
+{
+	text-align: left;
+	color: black;
+	font-weight: bold;
+	background-color: white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-bottom: 2px black solid;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+.sectionacteur h2
+{
+	text-align: left;
+	width: 80%;
+	margin-left: auto;
+    margin-right: auto;
+    border: solid 2px;
+    padding-left: 3px;
+}
+
+h3
+{
+	margin-bottom: 25px;
+	padding-top: 50px;
+}
+
+.pseudo_titre
+{
+	text-align: center;
+	color: black;
+	font-weight: bold;
+	background-color: white;
+	margin-bottom: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-transform: uppercase ;
+}
+
+.presentation
+{
+	border: solid 2px;
+	border-top: none;
+	background-color: rgba(255, 0, 0, 0.7);
+	margin-bottom: 30px;
+	margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    font-size: 15px;
+    padding-left: 3px;
+    width: 80%;
+}
+
+.sectionpresentation h2
+{
+	text-align: left;
+	width: 80%;
+	margin-left: auto;
+    margin-right: auto;
+    border: solid 2px;
+    padding-left: 3px;
+}
+
+.sectioncommentaires
+{
+	width: 80%;
+	border: solid 2px;
+	background-color: rgba(255, 0, 0, 0.7);
+	margin: 20px;
+	margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    font-size: 15px;
+}
+
+a
+{
+	color: black;
+}
+
+.pagecentree
+{
+	text-align: center;
+}
+
+form
+{
+	margin-top: 5%;
+	margin-bottom: 3%;
+	padding-top: 1%;
+}
+
+.pageindex label
+{
+	font-size: 18px;
+	padding-top: 5px;
+}
+
+.pageindex a
+{
+	font-size: 13px;
+}
+
+.champsconnexion
+{
+	width: 100%;
+	margin-bottom: 1%;
+	border: solid 2px;
+}
+
+.sectionacteur h2
+{
+	border-bottom: none;
+}
+
+.acteur
+{
+	display: flex;
+	width: 80%;
+	border: solid 2px;
+	background-color: rgba(255, 0, 0, 0.7);
+	margin-left: auto;
+    margin-right: auto;
+    padding-bottom: px;
+    justify-content: space-between;
+    padding-bottom: 20px;
+   	padding: 1%;
+	margin-bottom: 30px;
+	font-size: 15px;
+}
+	@media screen and (max-width: 800px)
+	{
+		.acteur
+		{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-end;
+		}
+	}
+	@media screen and (max-width: 480px)
+	{
+		.acteur
+		{
+			display: flex;
+			flex-direction: column;
+			align-content: flex-end;
+		}
+	}
+
+
+.logo_acteur_mini
+{
+	width: 30%;
+	height: 100px;
+	border: 2px black solid;
+
+}
+	@media screen and (max-width: 800px)
+	{
+		.logo_acteur_mini
+		{
+			width: 30%;
+		}
+	}
+	@media screen and (max-width: 480px)
+	{
+		.logo_acteur_mini
+		{
+			width: 95%;
+		}
+	}
+
+.description
+{
+	padding: 1%;
+	max-width: calc(100% - 20% - 105px);
+}
+	@media screen and (max-width: 480px)
+	{
+		.description
+		{
+			margin-left: 1%;
+			padding: 2%;
+			max-width: 100%;
+		}
+	}
+
+.descriptiontrunc
+{
+	margin-top: 30px;
+	max-height: 2em;
+	word-wrap: break-word;
+  	width: 90%;
+  	white-space: nowrap;
+	overflow: hidden;
+  	text-overflow: ellipsis;
+}
+
+.boutonsuite
+{
+	padding: 5px;
+	text-align: center;
+	min-width: 105px;
+	width: 105px;
+	align-self: flex-end;
+	background-color: white;
+	border: 2px black solid;
+	border-radius: 10px;
+}
+
+.liensuite
+{
+	margin: auto;
+	padding: 1%;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.logo_acteur
+{
+	margin: 3% auto 3% auto;
+	width: 60%;
+	max-height: 300px;
+	display: flex;
+	justify-content: center;
+	border: 2px black solid;
+	border-radius: 10px;
+}
+
+.description_acteur
+{
+	padding: 1.8rem;
+}
+
+.nb_commentaires_likes
+{
+	padding: 1%;
+	border-bottom: 2px black solid;
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+}
+
+.nb_commentaires
+{
+	background-color: white;
+}
+
+.nb_likes
+{
+	padding-right: 1%;
+}
+
+.likes
+{
+	color: rgba(61,181,74);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.poucerouge
+{
+	color: rgba(0, 0, 0);
+}
+
+.dislikes
+{
+	color: rgba(255, 0, 0);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.derniers_comm
+{
+	text-align: center;
+ 	padding: 10px;
+  	border-bottom: 2px solid black;
+ 	background-color: white;
+ 	font-weight: bold;
+}
+
+.commentaire
+{
+	margin: auto;
+	margin-top: 2%;
+	width: 95%;
+	padding: 0.5%;
+	background-color: white;
+	border: 2px solid;
+}
+
+.infos_comm
+{
+	background-color: white;
+	font-size: 13px;
+}
+
+.comm
+{
+	border-top: 1px black solid;
+	background-color: white;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.nouveau_comm
+{
+	width: 90%;
+	margin: auto;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	padding: 1%;
+	border: solid 2px black;
+	text-align: center;
+	font-weight: bold;
+}
+
+textarea
+{
+	width: 100%;
+	height: auto;
+	padding: 1%;
+}
+
+.mentionslegales
+{
+	width: 80%;
+	border: solid 2px;
+	background-color: rgba(255, 0, 0, 0.7);
+	margin: 20px;
+	margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    font-size: 15px;
+    padding-left: 3px;
+}
+
+.datementions
+{
+	text-align: center;
+	font-style: italic;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+
+.iconemembre
+{
+	max-height: 80px;
+	max-width: 50px;
+	align-self: center;
+}
+
+.envoyercom
+{
+	background-color: white;
+	border: solid 2px;
+	border-radius: 10%;
+	height: 30px;
+	width: 85px;
+	margin-top: 10px;
+}
+
+.pagecentree h2, .contact h2
+{
+	text-align: center;
+	border: none;
+	margin-top: 20px;
+	margin-bottom:  20px;
+}
+
+.modifinfos, .inscriptionpage, .newmdp, .reponsesecrete
+{
+	width: 80%;
+	margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    margin-top: 8px;
+    padding-top: 8px;
+    font-weight: 400;
+}
+
+textarea, input[type=email], input[type=text], input[type=password]
+{	
+    width: 100%;
+    padding: 5px;
+    border: 2px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-right: 0px;
+    margin-left: 0px;
+    resize: vertical;
+    border-color: rgba(255, 0, 0);
+}
+
+label
+{
+	margin-right: 0px;
+  	margin-left: 0px;
+  	width: 100%;
+ }
+
+input[type=submit] 
+{	
+  	border: solid 2px;
+  	border-radius: 10px;
+  	cursor: pointer;
+}
+
+input[type=submit]:hover 
+{
+  	background-color: rgba(255, 0, 0);
+}
+
+.container 
+{
+   	/* Ajouter box-sizing */
+   	box-sizing : border-box;
+   	border-radius:5px;
+   	padding:20px;
+  	width: 100%;
+  	/* redéfinition 400 + 2*20 */
+ 	 max-width: 80%;
+ 	 margin:0 auto;
+}
+
+.contact h1  
+{
+ 	width: 100%;
+ }
+
+.contact form 
+{
+	border: solid 2px;
+	padding: 7px;
+}
